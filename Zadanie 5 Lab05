@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int fp(int x, int y) {
+    int wynik, * w_wynik = &wynik;
+    *w_wynik = pow(x, y);
+    return *w_wynik;
+}
+
+int main()
+{
+    int liczba, sila, * w_l = &liczba, * w_sila = &sila;
+
+    cout << "Podaj liczbe: ";
+    cin >> liczba;
+    cout << "Podaj sile: ";
+    cin >> sila;
+    cout << *w_l << " Podniesc do " << *w_sila << " wynosi: " << fp(*w_l, *w_sila);
+    return 0;
+}
