@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int kwadrat(int x) {
+    return x * x;
+}
+
+int main()
+{
+    int y, * w = &y;
+    cout << "Podaj liczbę, którą podniesiemy do kwadratu: ";
+    cin >> y;
+    cout << "Liczba podniesiona do kwadratu: " << kwadrat(*w);
+
+    return 0;
+}
