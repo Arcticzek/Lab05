@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+void floop(int x, char a) {
+    for (int i = 0; i < x; i++) {
+        cout << a << endl;
+    }
+    x = x - 1; // chyba tak ma byc
+}
+
+int main()
+{
+    char c, * w_char = &c;
+    int ile, * w_ile = &ile;
+    cout << "Podaj postac: ";
+    cin >> c;
+    cout << "Podaj, ile razy znak ma być wyświetlany: ";
+    cin >> ile;
+    floop(*w_ile, *w_char);
+    return 0;
+}
