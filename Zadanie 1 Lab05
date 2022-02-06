@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int* w, * w1, * w2;
+    int x = 5, y, z = 6;
+
+    w2 = &z;
+    w1 = &y;
+    w = &x;
+    cout << "Adres: " << w << endl;
+    cin >> y;
+    cout << "Adres: " << w1 << " Value: " << *w1 << endl;
+    cout << "Odejmowanie: " << (*w - *w1) << endl;
+    cout << "Średnia 3 liczb: " << (double)(*w + *w1 + *w2) / 3.0;
+    return 0;
+}
